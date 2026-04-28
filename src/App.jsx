@@ -2,15 +2,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
-
-import Market from "./components/Market/Market";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero.jsx/Hero";
 import AboutUs from "./components/Aboutus/AboutUs";
 import Navbar2 from "./components/navbar/Navbar2";
-import Score from "./components/Score/Score";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Services from "./components/Services/Services";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -32,7 +30,7 @@ function App() {
         <section id="home">
           <Hero />
         </section>
-        <Score />
+        {/* <Score /> */}
         <section id="about">
           <AboutUs />
         </section>
@@ -42,6 +40,9 @@ function App() {
         </section>
         <section id="services">
           <Services />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
         <section id="footer">
           <Footer />
